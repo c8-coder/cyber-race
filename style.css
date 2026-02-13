@@ -1,0 +1,71 @@
+body{
+margin:0;
+background:radial-gradient(circle at center,#0a0a1f,#000);
+color:#0ff;
+font-family:monospace;
+overflow:hidden;
+}
+
+#intro{
+position:fixed;
+width:100%;
+height:100%;
+background:black;
+display:flex;
+justify-content:center;
+align-items:center;
+z-index:1000;
+}
+
+#intro h1{
+color:gold;
+text-shadow:0 0 30px gold;
+animation:pulse 2s infinite alternate;
+}
+
+@keyframes pulse{
+from{opacity:0.5}
+to{opacity:1}
+}
+
+#menu{
+position:fixed;
+width:100%;
+height:100%;
+display:none;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+background:linear-gradient(#0b0015,#000);
+}
+
+#menu h2{
+color:gold;
+text-shadow:0 0 20px gold;
+}
+
+button{
+background:black;
+border:1px solid #0ff;
+color:#0ff;
+padding:10px 20px;
+margin:10px;
+cursor:pointer;
+}
+
+button:hover{
+background:#0ff;
+color:black;
+}
+
+input{
+background:black;
+border:1px solid gold;
+color:gold;
+padding:8px;
+margin-bottom:10px;
+}
+
+canvas{
+display:block;
+}
